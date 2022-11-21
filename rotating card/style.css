@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: black;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+  
+  .ball {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 150px;
+  }
+  
+  .color1 {
+    background-image: radial-gradient(
+      circle at 50% -20.71%,
+      #de9c2c 0,
+      #e5922a 8.33%,
+      #ea852b 16.67%,
+      #ee772d 25%,
+      #f16731 33.33%,
+      #f35436 41.67%,
+      #f23c3c 50%,
+      #f01843 58.33%,
+      #ed004c 66.67%,
+      #e90057 75%,
+      #e30064 83.33%,
+      #db0071 91.67%,
+      #d10080 100%
+    );
+    position: relative;
+    right: 50px;
+    bottom: 100px;
+    animation-name: animationBall1;
+    animation-duration: 4s;
+  }
+  
+  @keyframes animationBall1 {
+    50% {
+      background-image: radial-gradient(
+        circle at 50% -20.71%,
+        #a3a7ff 0,
+        #7a8ffc 25%,
+        #3c78f2 50%,
+        #0063e8 75%,
+        #0051de 100%
+      );
+      width: 200px;
+      height: 200px;
+      bottom: 20px;
+    }
+  }
+  
+  .color2 {
+    background-image: radial-gradient(
+      circle at 100% 100%,
+      #fff56b 0,
+      #fff866 6.25%,
+      #fdfa63 12.5%,
+      #e7fb61 18.75%,
+      #d0fb62 25%,
+      #b5fa65 31.25%,
+      #97f86a 37.5%,
+      #73f670 43.75%,
+      #3cf278 50%,
+      #00ee82 56.25%,
+      #00ea8f 62.5%,
+      #00e69d 68.75%,
+      #00e2ad 75%,
+      #00dfbe 81.25%,
+      #00dbd1 87.5%,
+      #00d8e3 93.75%,
+      #00d6f6 100%
+    );
+    position: relative;
+    top: 100px;
+    animation-name: animationBall2;
+    animation-duration: 4s;
+  }
+  
+  @keyframes animationBall2 {
+    50% {
+      background-image: linear-gradient(
+        125deg,
+        #ffff7c 0,
+        #ffff6f 12.5%,
+        #fff565 25%,
+        #ffda5c 37.5%,
+        #f2bd53 50%,
+        #dda14c 62.5%,
+        #c98a46 75%,
+        #b77642 87.5%,
+        #a8663f 100%
+      );
+  
+      width: 200px;
+      height: 200px;
+      top: 10px;
+    }
+  }
+  
+  .cardMain {
+    background-color: red;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+  }
+  
+  .cardMain:hover .card {
+    transform: rotateY(180deg);
+  
+  }
+  
+  .card {
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: relative;
+    border: 2px solid #fff;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+  
+  }
+  
+  .cardFront,
+  .cardBack {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: visible;
+    transform-style: preserve-3d;
+  }
+  
+  
+  
+  .cardBack {
+    transform: rotateY(180deg); 
+  }
+  
+  .title {
+    width: 100%;
+    text-align: right;
+  }
+  
+  .title label {
+    width: 100%;
+    color: #000;
+    font-family: "Russo One", sans-serif;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  
+  .contentImg {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .contentImg img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .inf {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding-left: 5px;
+  }
+  
+  .nickname {
+    color: #fff;
+    font-family: "Baloo 2", cursive;
+    font-size: 18px;
+  }
+  
+  .name {
+    color: #fff;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 600;
+  }
+  
+
+
+
+
+  
