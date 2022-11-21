@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+.contentBody {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-2 {
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+}
+
+.phoneLight,
+.phoneDark {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 25px;
+}
+
+.phoneLight {
+  background-color: #fff;
+}
+
+.phoneDark {
+  background-color: #000;
+}
+
+.phone {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 37/76;
+  background-color: #fff;
+  height: 40em;
+  border-radius: 3.66em;
+  width: 20rem;
+  box-shadow: 0 0 0.1em 0.25em hsl(284, 20%, 25%),
+    0 0 0 0.4em hsl(284, 30%, 85%);
+  transform: scale3d(1.1, 1.1, 1);
+  -webkit-animation: appear 1s cubic-bezier(0.15, 0, 0.333, 1) forwards;
+}
+
+@-webkit-keyframes appear {
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+
+.phoneLight .phone {
+  box-shadow: 0 0 0.1em 0.25em hsl(284, 20%, 25%), 0 0 0 0.4em hsl(0, 0%, 0%);
+}
+
+.phone-buttons {
+  inset: 0.4em * -1;
+  pointer-events: none;
+  width: 20rem;
+  background-color: transparent;
+}
+
+.phone-buttons-left,
+.phone-buttons-right {
+  position: relative;
+  width: 0.333em;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5em;
+}
+
+.phone-buttons-left {
+  right: 0.7rem;
+  top: calc(3.66em * 2);
+}
+
+.phone-buttons-left .btnPh {
+  margin-bottom: 0.5rem;
+  height: 3rem;
+}
+
+.phone-buttons-left .btnPh:nth-child(1) {
+  height: 2rem;
+}
+
+.phone-buttons-right {
+  left: 20.4rem;
+  transform: scale3d(-1, 1, 1);
+  background-color: transparent;
+}
+
+.phone-buttons-right .btnPh {
+  margin-bottom: 9.5em;
+  height: 5em;
+}
+
+.btnPh {
+  background-color: hsl(284, 20%, 95%);
+  box-shadow: inset -0.15em 0 0.1em #000, inset 0 0 0.1em hsl(284, 30%, 90%),
+    inset 0, 0.2em 0.1em hsl(284, 30%, 90%),
+    inset 0 -0.2em 0.1em hsl(284, 30% 90%),
+    inset -0.1em 0.33em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.phoneLight .btnPh {
+  background-color: #000;
+  box-shadow: inset -0.15em 0 0.1em #000, inset 0 0 0.1em hsl(284, 30%, 90%),
+    inset 0, 0.2em 0.1em hsl(284, 30%, 90%),
+    inset 0 -0.2em 0.1em hsl(284, 30% 90%),
+    inset -0.1em 0.33em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.phone-touch {
+  background-color: transparent;
+  position: absolute;
+  top: 0.5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-touch-container {
+  position: relative;
+  background-color: black;
+  height: 1.5rem;
+  width: 6rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline: 5px;
+}
+
+.phone-touch-container-camera {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #001a48,
+    #001957,
+    #141565,
+    #2b0970
+  );
+}
+
+.phone-screen {
+  background-image: radial-gradient(
+    circle at 50% -20.71%,
+    #ff57d2 0,
+    #ff4edb 12.5%,
+    #f046e3 25%,
+    #d63feb 37.5%,
+    #b53cf2 50%,
+    #8c3df9 62.5%,
+    #4f40ff 75%,
+    #0046ff 87.5%,
+    #004bff 100%
+  );
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  border-radius: 3.66em;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.phoneLight .phone-screen {
+  background-image: linear-gradient(
+    180deg,
+    #ffff7c 0,
+    #ffff6f 12.5%,
+    #fff565 25%,
+    #ffda5c 37.5%,
+    #f2bd53 50%,
+    #dda14c 62.5%,
+    #c98a46 75%,
+    #b77642 87.5%,
+    #a8663f 100%
+  );
+}
+
+.phone-screen-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
