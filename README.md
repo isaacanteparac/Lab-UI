@@ -33,6 +33,7 @@ Component tests
 
 
 ### Lab
-- [Screenshots](https://github.com/isaacanteparac/UI-design/blob/master/lab/SCREENSHOT.md)
-- [Crystal effect card](https://github.com/isaacanteparac/UI-design/tree/master/lab/crystal%20effect%20card)
-- [Rotating card](https://github.com/isaacanteparac/UI-design/tree/master/lab/rotating%20card)
+- [Screenshots](https://github.com/isaacanteparac/Lab-UI/blob/master/SCREENSHOT.md)
+- [Crystal effect card](https://github.com/isaacanteparac/Lab-UI/tree/master/crystal%20effect%20card)
+- [Rotating card](https://github.com/isaacanteparac/Lab-UI/tree/master/rotating%20card)
+- [Phone and Laptop](https://github.com/isaacanteparac/Lab-UI/tree/master/computer-phone)
