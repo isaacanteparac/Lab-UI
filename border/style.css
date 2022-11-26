@@ -1,0 +1,187 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cabaret: #ff0745;
+  --casablanca: #ffc107;
+  --keppek: #45ff07;
+  --havelockBlue: #0745ff;
+  --colorText: #14243c;
+  --yellow: #a57d05;
+  --green: #2fb004;
+  --rosa: rgb(239, 0, 252);
+}
+
+.InfoProyect-boxPicture {
+  border-radius: 20px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InfoProyect-boxPicture-img {
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  object-fit: cover;
+  width: 350px;
+  height: 300px;
+  border: none;
+
+  border-radius: 1rem;
+  animation-name: photoIm;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  *opacity: 0;
+  background-color: #171616;
+
+}
+
+@keyframes photoIm {
+  25% {
+    box-shadow: 5px 5px 0 2px #FF5589;
+  }
+  50% {
+    box-shadow: 5px 5px 0 2px #FF5589, 10px 10px 0 4px #7655ff;
+  }
+  75% {
+    box-shadow: 5px 5px 0 2px #FF5589, 10px 10px 0 4px #7655ff,
+      15px 15px 0 6px #FFD248;
+  }
+  100% {
+    box-shadow: 5px 5px 0 2px #FF5589, 10px 10px 0 4px #7655ff,
+      15px 15px 0 6px #FFD248, 20px 20px 0 8px #01C8E9;
+  }
+}
+
+.text {
+  position: fixed;
+  left: 75%;
+  top: 17%;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.sect {
+  position: relative;
+  left: 1.25rem;
+  margin-block: 0.3125rem;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.sect label {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+}
+
+.subTitle {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.bgConocimientos .sect:nth-child(1) .subTitle {
+  color: var(--havelockBlue);
+}
+
+.bgConocimientos .sect:nth-child(2) .subTitle {
+  color: var(--cabaret);
+}
+.colorRosa {
+  color: var(--rosa);
+}
+
+.colorGreen {
+  color: var(--green);
+}
+
+.colorYellow {
+  color: var(--yellow);
+}
+
+.projects {
+  position: fixed;
+  top: 14%;
+  right: 64%;
+  height: 600px;
+  width: 550px;
+  *background-color: red;
+  overflow: hidden;
+}
+
+.cardp {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  padding: 0px;
+  border: 2px solid #222;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-box-shadow: 10px 10px 0px 0px #858792;
+  -moz-box-shadow: 10px 10px 0px 0px #858792;
+  box-shadow: 10px 10px 0px 0px #858792;
+}
+
+.titleCard {
+  width: 100%;
+  font-family: "Capriola", sans-serif;
+  font-size: 15px;
+  background-color: #222;
+  color: #fff;
+  padding-left: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.contenePicture {
+  height: 119px;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentPicture-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.projects .cardp:nth-child(1){
+  left: 50px;
+}
+
+.projects .cardp:nth-child(2){
+  left: 300px;
+}
+
+.projects .cardp:nth-child(3){
+  left: 50px;
+}
+
+.projects .cardp:nth-child(4){
+  left: 300px;
+}
