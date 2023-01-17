@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #fff;
+  --colorText: #00ffae;
+  --titleColor: #0073ff;
+  --ffamily: "Russo One", sans-serif;
+  --fcircleWH: 12.5rem;
+  --flineH: 450px;
+  --flineW: 3.125rem;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.Body-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+}
+
+.Body-container-h1 {
+  font-family: var(--ffamily);
+  color: var(--titleColor);
+}
+
+.CardMetal {
+  width: 31.25rem;
+  height: 18.75rem;
+  border-radius: 1.5625rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.CardMetal-content {
+  font-family: var(--ffamily);
+  color: var(--colorText);
+
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  background: linear-gradient(#ffffff3d, #9696963d);
+
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.CardMetal-FCircle {
+  height: var(--fcircleWH);
+  width: var(--fcircleWH);
+  border-radius: calc(var(--fcircleWH) / 2);
+}
+
+.CardMetal-FLine {
+  background-color: blue;
+  height: var(--flineH);
+  width: var(--flineW);
+  border-radius: 0.625rem;
+}
+
+.color-white {
+  background-color: transparent;
+}
+
+.color-pink {
+  background-color: #f44d69;
+}
+
+.color-orange {
+  background-color: #fca606;
+}
+
+.--size-mega {
+  height: calc(var(--fcircleWH) * 1.5);
+  width: calc(var(--fcircleWH) * 2.5);
+}
+
+.--n-1 {
+  position: absolute;
+  z-index: -2;
+  top: 0px;
+  right: 0.0625rem;
+  border-radius: 0;
+}
+
+.--n-2 {
+  position: absolute;
+  z-index: -1;
+  top: -75px;
+  left: 18.75rem;
+  transform: rotate(-140deg);
+}
+
+.--n-3 {
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  left: 350px;
+  transform: rotate(-140deg);
+}
