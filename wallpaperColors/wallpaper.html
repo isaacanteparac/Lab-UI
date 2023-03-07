@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="interaction.js"></script>
+    <title>wallpaper</title>
+    <style></style>
+  </head>
+
+  <body id="idBody" onload="createElement()">
+    <!--TITLE: WALLPAPER-->
+    <div class="box" id="idBox">
+      <div class="boxWallpaper" id="idBoxWallpaper"></div>
+      <div class="blurBox" id="idBlur"></div>
+      <picture class="boxPicture" id="idPicture">
+        <img class="boxPict-img" id="idImg" src="" alt="img"
+      /></picture>
+    </div>
+    <!--TITLE: CONFIG-->
+    <div class="CardInput">
+      <div class="boxInput">
+        <select
+          class="boxText"
+          id="idColorWallpaper"
+          onclick="btnColor(`idColorWallpaper`)"
+        >
+          <option value="background-color:#000000" selected>
+            Selecione un degradado
+          </option>
+        </select>
+        <div class="boxCheck">
+          <input type="checkbox" onclick="visible(`#idBlur`, `block`)" />
+          <label class="text">Efecto Blur</label>
+        </div>
+      </div>
+
+      <div class="boxInput">
+        <input
+          type="text"
+          class="boxText"
+          placeholder="Ingrese el degradado"
+          id="idInputGradient"
+        />
+        <button
+          class="btndefault"
+          onclick="btnColor(`idInputGradient`)"
+          type="button"
+        >
+          Send
+        </button>
+      </div>
+
+      <div class="boxInput">
+        <input
+          type="text"
+          class="boxText"
+          placeholder="Ingrese la URL de la imagen"
+          id="idinputImage"
+        />
+        <h3 class="text">Or</h3>
+        <input
+          type="file"
+          accept="image/*"
+          class="inputImg"
+          id="idInputFileImg"
+        />
+
+        <button
+          class="btndefault"
+          type="button"
+          onclick="loadImage(`idinputImage`, `idImg`)"
+        >
+          Upload Image
+        </button>
+      </div>
+    </div>
+     <!--TITLE: AUTHOR-->
+    <footer>
+      <label class="text">
+        2023 Made with ❤️ from
+        <a href="https://github.com/isaacanteparac" target="_blank"
+          >@isaacantepara</a
+        >
+      </label>
+      <label class="text">😎💻🎧</label>
+    </footer>
+  </body>
+</html>
